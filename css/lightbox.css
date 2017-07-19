@@ -1,8 +1,4 @@
 /* Preload images */
-body:after {
-  content: url(../images/lightbox/close.png) url(../images/lightbox/loading.gif) url(../images/lightbox/prev.png) url(../images/lightbox/next.png);
-  display: none;
-}
 
 .lightboxOverlay {
   position: absolute;
@@ -91,7 +87,7 @@ body:after {
   z-index: 10;
 }
 
-.lb-container > .nav {
+.lb-container>.nav {
   left: 0;
 }
 
