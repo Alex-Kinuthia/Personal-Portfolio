@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="author" content="">
   <title>Alex Kinuthia</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet">
@@ -14,14 +13,23 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
   <![endif]-->
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+
 </head>
 <!--/head-->
 
@@ -34,42 +42,47 @@
   <header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
 
-      <div class="item active" style="background-image: url(images/moringa.jpg)">
-        <div class="caption">
-          <h1 class="animated fadeInLeftBig">Hi am <span>Alex</span></h1>
-          <p class="animated fadeInRightBig">I am a front end Android Developer</p>
-          <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Explore Me</a>
-        </div>
+      <img src="images/aleki.jpg" style="background-size: cover" width="1400px">
+
+      <div class="caption">
+        <h1 class="animated fadeInLeftBig">Hi! I'm <span>Alex</span></h1>
+        <p class="animated fadeInRightBig">Welcome to my Blog</p>
+
       </div>
-      <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+    </div>
+    <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
 
-      <!--/#home-slider-->
-      <div class="main-nav">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.html">
 
-            </a>
-          </div>
-          <div class="collapse navbar-collapse">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <div style="margin-top:-50%">
             <ul class="nav navbar-nav navbar-right">
               <li class="scroll active"><a href="#home">Home</a></li>
-              <li class="scroll"><a href="#about-us">About Me</a></li>
+              <li class="scroll"><a href="#services">About Me</a></li>
+              <li class="scroll"><a href="#about-us">Programming Skills</a></li>
               <li class="scroll"><a href="#portfolio">Projects</a></li>
-              <li class="scroll"><a href="blog.html">Blog</a></li>
+              <li class="scroll"><a href="https://coderwall.com/Alex%20Kinuthia">Blog</a></li>
               <li class="scroll"><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!--/#main-nav-->
+    </div>
+    <!--/#main-nav-->
   </header>
   <!--/#home-->
   <section id="services">
@@ -78,8 +91,8 @@
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
             <h2>About Me</h2>
-            <p>I have been coding for the past 5 months.I love creating software and building systems that help users interact with them .I participated in the <strong>NASA SPACE CHALLENGE</strong>and our team won the people's choice award.The following
-              are my hobbies:</p>
+            <p>I have been coding for the past 5 months. I love creating Software and Building systems that help users interact efficiently and effectively. I participated in the <strong>  <a href="https://2017.spaceappschallenge.org/">NASA SPACE CHALLENGE</a></strong>              and our team won the People's Choice Award for Nairobi, Kenya. Pretty cool, right? :)
+            </p>
           </div>
         </div>
       </div>
@@ -99,7 +112,7 @@
               <i class="fa fa-music"></i>
             </div>
             <div class="service-info">
-              <h3>Djying</h3>
+              <h3>Music</h3>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
@@ -107,7 +120,7 @@
               <i class="fa fa-heart"></i>
             </div>
             <div class="service-info">
-              <h3>Helping needy</h3>
+              <h3>Helping Needy</h3>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
@@ -115,7 +128,7 @@
               <i class="fa fa-futbol-o"></i>
             </div>
             <div class="service-info">
-              <h3>Playing football</h3>
+              <h3>Playing Football</h3>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
@@ -131,91 +144,89 @@
               <i class="fa fa-book"></i>
             </div>
             <div class="service-info">
-              <h3>Reading books</h3>
+              <h3>Reading Books</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  < <!--/#services-->
-    <section id="about-us" class="parallax">
-      <div class="container">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Programming Skills</h2>
+  <!--/#services-->
+  <section id="about-us" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-sm-8 col-sm-offset-2">
+          <h2>Programming Skills</h2>
 
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p class="lead">Android</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="95">95%</div>
-                </div>
-              </div>
-              <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <p class="lead">Angular</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="60">60%</div>
-                </div>
-              </div>
-              <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <p class="lead">Ember</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="70">70%</div>
-                </div>
-              </div>
-              <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <p class="lead">Firebase</p>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="85">85%</div>
-                </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <p class="lead">Android</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="95">95%</div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
             <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
               <p class="lead">Html/Css</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="90">90%</div>
               </div>
             </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <p class="lead">Java</p>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Firebase</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="75">75%</div>
               </div>
             </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <p class="lead">Jquery</p>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Angular</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="60">60%</div>
               </div>
             </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <p class="lead">UI/UX Design</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="70">70%</div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <p class="lead">Html/Css</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="90">90%</div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <p class="lead">UI/UX</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="65">65%</div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+            <p class="lead">UI/UX</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="65">65%</div>
+            </div>
+          </div>
+          <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+            <p class="lead">JQuery</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar" aria-valuetransitiongoal="60">60%</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </section>
-    <!--/#about-us-->
+  </section>
+  <!--/#about-us-->
 
-    <section id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>My Projects</h2>
-          </div>
-        </div>
+  <section id="portfolio">
+    <div style="margin-bottom:-10%" "margin-top:50%">
+      <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h2>My Projects</h2>
       </div>
+
       <section id="projects" class="section scrollspy">
         <div class="clearfix">
           <h3></h3>
@@ -295,103 +306,93 @@
         </div>
       </div>
       <!-- /#portfolio-single-wrap -->
-    </section>
-    <!--/#portfolio-->
-    <!--/#pricing-->
+    </div>
+  </section>
+  <!--/#portfolio-->
+  <!--/#pricing-->
 
 
-    <!--/#twitter-->
+  <!--/#twitter-->
 
-    <section id="contact">
-      </div>
-      <div id="contact-us" class="parallax">
-        <div class="container">
-          <div class="row">
-            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <h2>Contact Me</h2>
-            </div>
+  <section id="contact">
+    </div>
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contact Me</h2>
           </div>
-          <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-              <div class="col-sm-6">
-                <form id="main-contact-form" name="contact-form" method="post" action="#">
-                  <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Name" required="required">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
-                      </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Name" required="required">
                     </div>
                   </div>
-                  <div class="form-group">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn-submit">Send Now</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-sm-6">
-                <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                  <ul class="address">
-                    <li><i class="fa fa-map-marker"></i> <span> Address:</span> Moringa School</li>
-                    <li><i class="fa fa-phone"></i> <span> Phone:</span> +254 716007495 </li>
-                    <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="alexkinuthia125@gmail.com"> alexkinuthia125@gmail.com</a></li>
-                  </ul>
                 </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn-submit">Send Now</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <ul class="address">
+                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> Moringa School</li>
+                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +254 716007495 </li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="alexkinuthia125@gmail.com"> alexkinuthia125@gmail.com</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--/#contact-->
-    <footer id="footer">
-      <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="container text-center">
-          <div class="social-icons">
-            <ul>
-              <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
-            </ul>
+    </div>
+  </section>
+  <!--/#contact-->
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="social-icons">
+          <ul>
+            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>&copy; 2017 Alex Kinuthia.</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right">Crafted by <a href="">Alex Kinuthia</a></p>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p>&copy; 2017 Alex Kinuthia.</p>
-            </div>
-            <div class="col-sm-6">
-              <p class="pull-right">Crafted by <a href="">Alex Kinuthia</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/mousescroll.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
